@@ -2,7 +2,7 @@
 //Dual port static synchronous RAM of variable size with initialization file
 //Author: @RndMnkIII
 //Date: 15/03/22
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 //default 8x1K ram size

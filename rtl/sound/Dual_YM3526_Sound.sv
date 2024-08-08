@@ -2,7 +2,7 @@
 //Author: @RndMnkIII
 //Date: 26/05/2022
 //sound output frequency 55.556KHz
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/10ps
 
 module Dual_YM3526_Sound

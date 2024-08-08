@@ -1,7 +1,7 @@
 //A5004_4.sv
 //Author: @RndMnkIII
 //Date: 22/06/2022
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module A5004_4(

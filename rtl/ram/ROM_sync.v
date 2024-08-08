@@ -3,7 +3,7 @@
 //Date: 15/03/22
 //Intel//Altera Version
 
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ROM_sync_intel #(parameter DATA_WIDTH = 8, ADDR_WIDTH = 15, DATA_HEX_FILE="dump.hex")(
