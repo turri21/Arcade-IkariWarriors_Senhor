@@ -1,3 +1,15 @@
+-=(IkariWarriors_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound
+
+The original Arcade-IkariWarriors.qsf is renamed to Arcade-IkariWarriors.qsfold
+
+For consistency purposes with the MiSTer framework, we did not change the declarations from implicit to explicit.
+
+//`default_nettype none <--- Therefore, it is disabled on every file it was present, otherwise synthesizing in Quartus will stop due to several errors.
+
+sys/sys_top.sv reg lowlat = 1; //Senhor: Set to 1 (previous value 0) to fix the pixel edge color artifacts when MISTER_FB=1 is enabled in the .qsf
+
 # SNK Ikari Warriors / Victory Road:
 ![Ikari Warriors](/docs/ikaria-warriors-flyer.jpg)
 ![Victory Road](/docs/victory_road.pjg.jpg)
