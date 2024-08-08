@@ -1,7 +1,7 @@
 //Author: @RndMnkIII
 //Date: 18/06/2022
 //Derived from IKARI A5004-2 PAL20L8A
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/10ps
 
 module A5004_2 (

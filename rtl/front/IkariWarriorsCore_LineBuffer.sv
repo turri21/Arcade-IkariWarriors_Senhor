@@ -1,7 +1,7 @@
 //IkariWarriorsCore_LineBuffer.sv
 //Author: @RndMnkIII
 //Date: 21/06/2022
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module IkariWarriorsCore_LineBuffer(

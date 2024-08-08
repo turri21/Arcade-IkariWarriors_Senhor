@@ -3,7 +3,7 @@
 //Date: 08/06/2022
 //clk_i   53.6MHz
 //clk_i_n 53.6MHz shifted 180 degrees.
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module IkariWarriorsCoreClocks_Cen (

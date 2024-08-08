@@ -3,7 +3,7 @@
 //Date: 15/06/2022
 //Converted from Ikari-A5004-1-GAL.jed using MAME's jedutil tool
 //Many thanks to @Porchy and pldarchive.co.uk for the JED files.
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module A5004_1 (

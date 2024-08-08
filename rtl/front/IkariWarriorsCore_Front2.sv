@@ -2,7 +2,7 @@
 //32x32px Sprite Generator Layer
 //Author: @RndMnkIII
 //Date: 20/06/2022
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 
