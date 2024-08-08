@@ -1,6 +1,6 @@
 //ttl_74175_sync.v
 //Quadruple D flip-flop with reset; positive-edge-triggered
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ttl_74175_sync

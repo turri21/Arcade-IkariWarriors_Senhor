@@ -13,7 +13,7 @@
 //        Q3      ->| 6          9  |O<- /MR        _
 //        GND     --| 7          8  |<-  CP (CLK) _| |_
 //                   ---------------
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ttl_74164_sync (

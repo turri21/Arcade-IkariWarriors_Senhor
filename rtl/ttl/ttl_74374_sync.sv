@@ -4,7 +4,7 @@
 // extracted from TI 74LS374 Datasheet.
 // Author: @RndMnkIII
 // Date: 17/03/2022
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ttl_74374_sync

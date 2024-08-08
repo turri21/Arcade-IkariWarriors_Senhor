@@ -1,7 +1,7 @@
 //ttl_74155.v
 `include "helper.v"
 
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 //Usage:
 //  reg [WIDTH_OUT-1:0] Block1;

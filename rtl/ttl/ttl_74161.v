@@ -1,7 +1,7 @@
 // 4-bit modulo 16 binary counter with parallel load, 
 //Asynchronous Master Reset (MRn) ->161A
 //Synchronous Reset (SRn) -> LS161
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74161 #(parameter WIDTH = 4, DELAY_RISE = 0, DELAY_FALL = 0)

@@ -1,5 +1,5 @@
 // ttl_74138_nodly.v
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/10ps
 
 module ttl_74138_nodly #(parameter WIDTH_OUT = 8, WIDTH_IN = $clog2(WIDTH_OUT))

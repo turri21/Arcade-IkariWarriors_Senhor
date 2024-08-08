@@ -1,5 +1,5 @@
 //ttl_74245_2dly.v
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74245_2dly #(parameter DELAY_AB = 12, DELAY_BA = 12)

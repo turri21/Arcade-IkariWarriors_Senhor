@@ -1,6 +1,6 @@
 // Quad 2-input multiplexer
 `include "helper.v"
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74157 #(parameter BLOCKS = 4, WIDTH_IN = 2, WIDTH_SELECT = $clog2(WIDTH_IN),

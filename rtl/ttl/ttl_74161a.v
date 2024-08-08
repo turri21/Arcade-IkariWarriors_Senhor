@@ -8,7 +8,7 @@
 //tP_clk2tc = 19ns min, 25ns max
 //tP_clk2q =  15ns min, 25ns max
 //20,25
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74161a #(parameter WIDTH = 4, DELAY_RISE = 0, DELAY_FALL = 0)

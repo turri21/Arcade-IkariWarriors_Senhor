@@ -21,7 +21,7 @@
 //<END_TEMPLATE>
 //
 //Author: @RndMnkIII. 11/03/2022. Data from TI SN74LS107A Datasheet
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ttl_74107a_AsyncClr #(parameter BLOCKS = 2)

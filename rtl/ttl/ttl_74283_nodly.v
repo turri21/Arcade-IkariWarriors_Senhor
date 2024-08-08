@@ -1,5 +1,5 @@
 // 4-bit binary full adder with fast carry
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/10ps
 
 //Check SN74LS283 TI datasheet for C4, Sum delays

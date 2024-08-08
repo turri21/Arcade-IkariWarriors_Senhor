@@ -1,6 +1,6 @@
 //Author: @RndMnkIII
 //Date: 12/03/2022
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/10ps
 module DFF_pseudoAsyncClrPre #(parameter W=1 ) (
     input      wire          clk,

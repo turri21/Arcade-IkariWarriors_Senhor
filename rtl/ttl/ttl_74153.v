@@ -1,6 +1,6 @@
 // Dual 4-input multiplexer
 `include "helper.v"
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74153 #(parameter BLOCKS = 2, WIDTH_IN = 4, WIDTH_SELECT = $clog2(WIDTH_IN),

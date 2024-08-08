@@ -1,6 +1,6 @@
 //ttl_74194_sync.v
 //4-Bit Bidirectional Universal Shift Register (Synchronous Version)
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ps
 
 module ttl_74194_sync

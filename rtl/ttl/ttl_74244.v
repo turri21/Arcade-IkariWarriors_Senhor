@@ -1,5 +1,5 @@
 //ttl_74244.v
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 //module ttl_74245 #(parameter DELAY_RISE = 12, DELAY_FALL = 12)

@@ -3,7 +3,7 @@
 //Author: @RndMnkIII
 //Date: 15/03/22
 `include "helper.v"
-`default_nettype none
+//`default_nettype none
 `timescale 1ns/1ns
 
 module ttl_74139_nodly
