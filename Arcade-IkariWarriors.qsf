@@ -46,7 +46,7 @@ set_global_assignment -name GENERATE_RBF_FILE ON
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name SAVE_DISK_SPACE OFF
-set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name SMART_RECOMPILE OFF
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -69,10 +69,7 @@ set_global_assignment -name VERILOG_MACRO "MISTER_FB=1"
 #set_global_assignment -name VERILOG_MACRO "MISTER_DISABLE_ADAPTIVE=1"
 
 source sys/sys.tcl
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CSEBA6U23I7
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CONVST
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SCK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SDI
