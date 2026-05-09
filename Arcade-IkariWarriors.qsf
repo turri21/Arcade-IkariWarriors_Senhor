@@ -48,11 +48,11 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name SAVE_DISK_SPACE OFF
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
-set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
 
 set_global_assignment -name VERILOG_MACRO "MISTER_FB=1"
 
@@ -69,80 +69,7 @@ set_global_assignment -name VERILOG_MACRO "MISTER_FB=1"
 #set_global_assignment -name VERILOG_MACRO "MISTER_DISABLE_ADAPTIVE=1"
 
 source sys/sys.tcl
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CSEBA6U23I7
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CONVST
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SCK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SDI
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SDO
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[*]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ARDUINO_IO[*]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ARDUINO_IO[*]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO_S*
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IO_S*
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to IO_S*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to USER_IO[*]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to USER_IO[*]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to USER_IO[*]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDCD_SPDIF
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDCD_SPDIF
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SDCD_SPDIF
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDRAM_*
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDRAM_*
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SDRAM_*
-set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to SDRAM_DQ[*]
-set_instance_assignment -name FAST_INPUT_REGISTER ON -to SDRAM_DQ[*]
-set_instance_assignment -name ALLOW_SYNCH_CTRL_USAGE OFF -to *|SDRAM_*
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SD_SPI*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_SPI*
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SD_SPI*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK1_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK2_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK3_50
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_I2C_*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_I2S
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_LRCLK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_MCLK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_SCLK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDMI_TX_*
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to HDMI_TX_D[*]
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to HDMI_TX_DE
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to HDMI_TX_HS
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to HDMI_TX_VS
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to HDMI_TX_CLK
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3]
-set_hps_location_assignment HPSINTERFACEPERIPHERALSPIMASTER_X52_Y72_N111 -to spi
-set_hps_location_assignment HPSINTERFACEPERIPHERALUART_X52_Y67_N111 -to uart
-set_hps_location_assignment HPSINTERFACEPERIPHERALI2C_X52_Y60_N111 -to hdmi_i2c
-set_global_assignment -name PRE_FLOW_SCRIPT_FILE "quartus_sh:sys/build_id.tcl"
 source sys/sys_analog.tcl
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDIO_*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDIO_*
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SDIO_DAT[*]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SDIO_CMD
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to VGA_EN
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_*
-set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to VGA_*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUDIO_*
-set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to AUDIO_*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BTN_*
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to BTN_*
 source files.qip
 
 set_global_assignment -name ENABLE_SIGNALTAP OFF
@@ -158,4 +85,5 @@ set_global_assignment -name SIGNALTAP_FILE front2_sram.stp
 set_global_assignment -name SIGNALTAP_FILE front2_linebuf.stp
 set_global_assignment -name SIGNALTAP_FILE DB15_DEBUG.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/ls30rot.stp
+set_global_assignment -name SDC_FILE senhor_constraints.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
