@@ -1,3 +1,8 @@
+-=(IkariWarriors_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # SNK Ikari Warriors / Victory Road:
 ![Ikari Warriors](/docs/ikaria-warriors-flyer.jpg)
 ![Victory Road](/docs/victory_road.pjg.jpg)
